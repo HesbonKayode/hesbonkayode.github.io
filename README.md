@@ -1,2 +1,4 @@
 # hesbonkayode.github.io
-hesbon kayode mocheng is an analytical and tech-savvy professional with a bachelor's degree in A pplied Computer SCience.
+hesbon kayode mocheng is an analytical and tech-savvy professional with a bachelor's degree in A pplied Computer SCience. He has a proven track record in data annotation, IT support and IT policy development, having worked with organizations such as Samasource kenya, kibra church of God and ict solutions. Hesbons skills include data manipulation, technical support for software and hardware and managing IT systems efficiently. 
+He is proficient in laveraging tools to optimize processes and is known for his strong communication skills and ability to thrive in dynamic, fast-pased environments. His certisfactions areas such as cybersecurity, advanced excell and information technology highlight his commitent to continuous learning and professional developoment.
+Hesbon's experince in managing data integrity, providing technical support and develope IT policies show case his ability to deliver reliable IT solutions and collaborate effectively with teams.
