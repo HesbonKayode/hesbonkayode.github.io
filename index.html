@@ -6,6 +6,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        style>
+        .image-container {
+            position: relative;
+            width: 300px; /* Adjust as needed */
+        }
+        .image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+        }
+        .image-container .hesbon 1.jpg {
+            z-index: 1;
+        }
+        .image-container .hesbon 2.jpg {
+            z-index: 2;
+            opacity: 0.5; 
+        }
+    </style>
     </head>
     <body>
         <header>
@@ -25,7 +45,9 @@
         <main>
             <section id="about">
                 <h1>About Me</h1>
-                <img src="images/hesbon 1.jpg" style="width: 300px; height: 300px;">
+                <div class="image-container"
+                <img src="images/hesbon 1.jpg" class="hesbon 1.jpg">
+                    <img src="images/hesbon 2.jpg" class="hesbon 2.jpg">
                 <p>I am Hesbon Kayode Mochengo, a dynamic and dedicated Computer Scientist with a Bachelor’s degree in Applied Computer Science. I am passionate about leveraging my skills in data manipulation, front-end web design, and technical support to drive impactful solutions. With a keen eye for detail and a commitment to excellence, I strive to deliver exceptional service aligned with organizational objectives.
 
                     My experience spans roles in data classification, IT policy development, and computer maintenance, where I honed my problem-solving and communication skills. I am a proactive learner and a collaborative team player, passionate about fostering positive relationships and making a lasting impact.</p>
