@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAYODE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            padding-bottom: 60px; /* Adjusted to match footer height */
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        section {
+            padding: 2rem;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav style="background: #fff; padding: 0.5rem 0; display: flex; align-items: center; position: relative;">
+        <span style="font-weight: bold; font-size: 1.2rem; margin-right: auto; padding-left: 20px; background: linear-gradient(to right, red, #030303); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">KAYODE</span>
+        <div id="menu-icon" style="display: none; cursor: pointer; margin-right: 20px;">
+            <span style="display: block; width: 25px; height: 3px; background: #333; margin: 5px 0;"></span>
+            <span style="display: block; width: 25px; height: 3px; background: #333; margin: 5px 0;"></span>
+            <span style="display: block; width: 25px; height: 3px; background: #333; margin: 5px 0;"></span>
+        </div>
+        <div id="nav-links" style="display: flex; flex-direction: row; align-items: center;">
+            <a href="index.html" style="color: #333; margin-right: 15px; transition: color 0.3s;" onmouseover="this.style.color='red'" onmouseout="this.style.color='#333'">Home</a>
+            <a href="#about" style="color: #333; margin-right: 15px; transition: color 0.3s;" onmouseover="this.style.color='red'" onmouseout="this.style.color='#333'">About</a>
+            <a href="#Skills" style="color: #333; margin-right: 15px; transition: color 0.3s;" onmouseover="this.style.color='red'" onmouseout="this.style.color='#333'">Skills</a>
+            <a href="#services" style="color: #333; margin-right: 15px; transition: color 0.3s;" onmouseover="this.style.color='red'" onmouseout="this.style.color='#333'">Services</a>
+            <a href="#contact" style="color: #333; margin-right: 15px; transition: color 0.3s;" onmouseover="this.style.color='red'" onmouseout="this.style.color='#333'">Contact</a>
+            <a href="Hesbon Kayode Mochengo.pdf" download style="background: limegreen; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; transition: background 0.3s;" onmouseover="this.style.background='red'" onmouseout="this.style.background='limegreen'">Download CV</a>
+        </div>
+    </nav>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.getElementById('nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            if (navLinks.style.display === 'none' || navLinks.style.display === '') {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '50px';
+                navLinks.style.right = '20px';
+                navLinks.style.background = '#fff';
+                navLinks.style.padding = '10px';
+                navLinks.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+            } else {
+                navLinks.style.display = 'none';
+            }
+        });
+
+        const updateMenuDisplay = () => {
+            if (window.innerWidth <= 768) {
+                menuIcon.style.display = 'block';
+                navLinks.style.display = 'none';
+            } else {
+                menuIcon.style.display = 'none';
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'row';
+                navLinks.style.position = 'static';
+                navLinks.style.boxShadow = 'none';
+            }
+        };
+
+        window.addEventListener('resize', updateMenuDisplay);
+        window.addEventListener('load', updateMenuDisplay);
+    </script>
+    <header>
+        <div style="text-align: center; margin-bottom: 1rem;">
+            <img src="Hesbon pp.jpg" alt="Hesbon Kayode Mochengo" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+        </div>
+        <h1>Hello, I'm Hesbon Kayode Mochengo
+            A Computer Scientist based in Nairobi, Kenya</h1>
+        <p>I'm a skilled Applied Computer Science graduate with a strong background in data analysis, technical support, and software development. I have successfully worked on projects such as an online hostel booking system and a train booking system,
+            demonstrating my ability to design and implement effective tech solutions. With expertise in data manipulation, IT policy development, and a passion for technology and innovation, I'm committed to leveraging my skills to solve real-world problems and drive digital transformation.</p>
+        <div style="margin-top: 1rem;">
+            <a href="https://www.linkedin.com/in/hesbon-mochengo-901b9b357" target="_blank" style="margin-right: 10px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width: 30px; height: 30px;">
+            </a>
+            <a href="https://github.com/HesbonKayode" target="_blank" style="margin-right: 10px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" style="width: 30px; height: 30px;">
+            </a>
+            <a href="https://www.instagram.com/your-profile" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style="width: 30px; height: 30px;">
+            </a>
+        </div>
+    </header>
+    <section id="about">
+        <h2 style="text-align: center;">About Me</h2>
+        <p>I’m a dedicated Computer Scientist with a Bachelor’s degree in Applied Computer Science. I specialize in data manipulation, IT support, front-end web design, and computer networks, bringing a detail-oriented and proactive approach to every project. I have hands-on experience working with organizations like SAMASource Kenya and ICT Solutions, where I contributed to data classification, IT maintenance, and technical support. My ability to ensure data integrity, optimize system performance, and develop IT policies reflects my commitment to delivering reliable and efficient solutions. With a passion for continuous learning,
+             I hold certifications in areas like Cybersecurity Awareness, Advanced Excel, and Information Security..</p>
+    </section>
+    <section id="Skills" style="background-color: orange; padding: 1rem;">
+        <h2 style="text-align: center; color: white;">My Skills</h2>
+        <ul style="list-style-type: disc; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Java</li>
+            <li>Technical Support</li>
+            <li>Data Analysis</li>
+        </ul>
+    </section>
+    <section id="services" style="background-color: #f4f4f4; padding: 2rem;">
+        <h2 style="text-align: center;">My Services</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; text-align: center;">
+            <div style="padding: 1rem; border: 1px solid #ddd; border-radius: 5px;">
+                <h3 style="transition: border-color 0.3s ease; border: 2px solid transparent; padding: 5px;" onmouseover="this.style.borderColor='limegreen'" onmouseout="this.style.borderColor='transparent'">Web Development</h3>
+                <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Web Development Icon" style="width: 50px; height: 50px; margin-top: 10px;">
+                <p>I have a passion for front-end web design, combining creativity and technical skills to build user-friendly and visually appealing websites. My expertise lies in HTML, CSS, and JavaScript, allowing me to craft responsive and accessible designs that enhance user experience. Through my experience, I’ve worked on projects that required a keen eye for detail and a deep understanding of UI/UX principles. I focus on creating clean layouts, intuitive navigation, and interactive elements that engage users effectively. Additionally, my skills in data manipulation and technical support enable me to optimize websites for both performance and functionality.
+                    I’m continuously exploring the latest trends and best practices in web design to ensure that my projects are not only aesthetically pleasing but also aligned with modern web standards.</p>
+            </div>
+            <div style="padding: 1rem; border: 1px solid #ddd; border-radius: 5px;">
+                <h3>Customer Service</h3>
+                <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Customer Service Icon" style="width: 50px; height: 50px; margin-top: 10px;">
+                <p>I pride myself on delivering exceptional customer service by combining strong communication skills with a detail-oriented approach. My experience in roles that involved technical support and IT maintenance has equipped me with the ability to handle customer inquiries efficiently, troubleshoot issues, and provide clear solutions. I am skilled in using CRM software to manage customer interactions, ensuring that every concern is addressed promptly and professionally. My ability to listen actively, empathize, and resolve problems has consistently contributed to positive customer experiences and high satisfaction rates. I believe that great customer service is about building relationships and ensuring that every interaction leaves a positive impression. I’m committed to continuously refining my skills to exceed customer expectations and support organizational goals.
+                     If you’re looking for someone who can blend technical expertise with outstanding customer care, let’s connect!</p>
+            </div>
+            <div style="padding: 1rem; border: 1px solid #ddd; border-radius: 5px;">
+                <h3>Technical Support</h3>
+                <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Technical Support Icon" style="width: 50px; height: 50px; margin-top: 10px;">
+                <p>In today’s fast-paced digital world, businesses and individuals rely on technology to stay efficient and competitive. As a Technical Support Specialist, I provide expert assistance to ensure seamless operation, maintenance, and troubleshooting of IT systems.</p>
+                <ul>
+                    <li><strong>IT Troubleshooting & Issue Resolution</strong>
+                        
+                    </li>
+                    <li><strong>Software & System Support</strong>
+                        
+                    </li>
+                    <li><strong>Network & Security Management</strong>
+                        
+                    </li>
+                    <li><strong>IT Policy & Compliance</strong>
+                       
+                    </li>
+                    <li><strong>Customer & End-User Support</strong>
+                    
+                    </li>
+                </ul>
+                <p>Whether you’re an individual, a small business, or a large organization, I am committed to providing reliable, efficient, and tailored technical support solutions to meet your needs.</p>
+            </div>
+            <div style="padding: 1rem; border: 1px solid #ddd; border-radius: 5px;">
+                <h3>Data Annotation</h3>
+                <img src="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" alt="Data Annotation Icon" style="width: 50px; height: 50px; margin-top: 10px;">
+                <p>I have hands-on experience in data annotation, specializing in ensuring high-quality and accurate data for machine learning models. My role at SAMASource Kenya involved image and video annotation, as well as classifying products into categories to maintain data integrity and quality standards. With a keen eye for detail, I excel at labeling data accurately, identifying patterns, and verifying information to enhance model performance. My ability to follow guidelines meticulously and manage large datasets efficiently ensures that annotated data is both reliable and consistent. 
+                    I understand the importance of clean and well-labeled data in driving the success of AI and machine learning projects and am passionate about contributing to such initiatives with precision and efficiency.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" style="margin-top: 1rem; position: relative; background: url('./images/contact me.jpeg') no-repeat center center/cover; color: white; padding: 2rem;">
+        <div style="background: rgba(0, 0, 0, 0.5); padding: 2rem; border-radius: 10px;">
+            <h2 style="text-align: left;">Contact Me</h2>
+            <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; margin-top: 1rem;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" style="width: 30px; height: 30px;">
+                    <span>Email: <a href="hesbonkayode@gmail.com" style="color: white; text-decoration: none;">hesbonkayode@gmail.com</a></span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone" style="width: 30px; height: 30px;">
+                    <span>Phone: +254 115 909 665</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Address" style="width: 30px; height: 30px;">
+                    <span>Address: Nairobi, Kenya</span>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center; margin-top: 1rem;">
+                <a href="Hesbon Kayode Mochengo.pdf" download style="background: limegreen; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; transition: background 0.3s;" onmouseover="this.style.background='red'" onmouseout="this.style.background='limegreen'">Download CV</a>
+            </div>
+        </div>
+        <div style="position: fixed; bottom: 80px; right: 20px; z-index: 1000;">
+            <a href="#top" style="display: inline-block; background: #333; color: white; padding: 15px; border-radius: 50%; text-decoration: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); font-size: 1.5rem; transition: background 0.3s;" onmouseover="this.style.background='red'" onmouseout="this.style.background='#333'">
+                &#8679;
+            </a>
+        </div>
+    </section>
+    <footer style="padding: 0.5rem 0; font-size: 0.8rem;">
+        <p>&copy; 2025 Hesbon Kayode Mochengo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
